@@ -1,4 +1,7 @@
 <<<<<<< HEAD
+=======
+<<<<<<< HEAD
+>>>>>>> master
 ![alt text](https://github.com/Ianwaterski/phase-0/blob/master/week-2/imgs/1-Home.png "Home Wireframe")
 ![alt text](https://github.com/Ianwaterski/phase-0/blob/master/week-2/imgs/2-blog.png "Blog Wireframe")
 
@@ -18,6 +21,9 @@ I had a general idea in my head of what I wanted the website to look like but en
 What is the clearest way to lay out my site? What is the easiest/robust wireframe webapp I can use to make this look professional? Does this wireframe look like something I would look at live on the internet?  Various links from the challenge helped me on my way to figuring out the answers, some were the actual links, some were links that I clicked through from the challenge links.
 
 #Which parts of the challenge did you enjoy and which parts did you find tedious?
+<<<<<<< HEAD
+I really enjoyed just laying out the wireframe in general.  It was a fun departure from flat out coding.  It was interesting to think about how you could lay out a website in a wireframe in order to make it approachable and easily display information.  The most tedious part was trying to find a wireframe app that would be easy to use and easy to export from.  Even that wasn't exceptionally tedious but it was the only thing of note in this challenge.
+=======
 I really enjoyed just laying out the wireframe in general.  It was a fun departure from flat out coding.  It was interesting to think about how you could lay out a website in a wireframe in order to make it approachable and easily display information.  The most tedious part was trying to find a wireframe app that would be easy to use and easy to export from.  Even that wasn't exceptionally tedious but it was the only thing of note in this challenge.
 =======
 ![Alt text](https://github.com/Ianwaterski/phase-0/blob/master/week-2/imgs/1-Home.png)
@@ -41,3 +47,4 @@ A lot of the questions I asked during this were what was the best resource to ma
 #Which parts of the challenge did you enjoy and which parts did you find tedious?
 I really enjoyed just laying out a bunch of mocked up wireframes.  I thought it was fun to take that first step into developing a site that I would ultimately pour some work into to make functional.  Finding out a bit more about designing a website graphicailly rather than on the development side was something I haven't had much of a chance to explore so that was also fun.  This overall was one of the more enjoyable challenges for me and there really wasn't an aspect I found tedious at all.  Maybe researching a wireframe app that was free and robust, but even that was easy.
 >>>>>>> 729f34151e72d06a585b7d2c3016e4089f8c5092
+>>>>>>> master
