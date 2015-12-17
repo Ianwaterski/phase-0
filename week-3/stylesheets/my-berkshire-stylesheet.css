@@ -1,0 +1,76 @@
+body {
+ color: #000080 ;
+}
+
+a:link {
+ color: #800080 ;
+}
+
+a:visited {
+ color: #ff0000 ;
+}
+
+html {
+ background-color: #ffffff ;
+}
+
+.links {
+  float: right;
+  width: 50%;
+}
+
+.small {
+  font-size: .75em;
+}
+
+h1 {
+  font-weight: bold;
+  font-size: 16px;
+  text-align: center;
+}
+
+.line {
+  border:0;
+  height: 0;
+  border-top: 1px solid;
+}
+
+h1 span {
+  display: block;
+}
+
+h1::first-letter {
+  font-size:2em;
+}
+
+p span {
+  text-align: center;
+  display: block;
+}
+footer p {
+  font-size:8px;
+}
+li {
+  padding: 5px;
+}
+
+
+/*
+
+#What is important to know when linking an external file (like a stylesheet) to an HTML file?
+Making sure the path is correct.  I had an issue where I was using the original Berkshire.html file which is not in the correct directory in relation to this assignment.  It took me a while to realize but obviously the path I specified was not where the stylesheet was.
+
+#What tricks did you use to help you with positioning? How hard was it to get the site as you wanted it?
+We used float and padding to really get everything where we wanted.  At first some of it was guess and check work.  We would change some values on the padding and then refresh our local page in the browser to see where they moved things.  It was tedious at first but we got the hang of it pretty quickly and were able to make it work.
+
+#What CSS did you use to modify the element style (like size, color, etc.)
+Text-weight, text-align, size, color, were all CSS parameters we used to edit the style.
+
+#Did you modify the HTML to include classes or ids? If so, which did you choose and why? If you didn't, how would you know which one to add to your HTML?
+Yes we did, we used links, small, span, and line.  Line we used to draw the hard line breaks instead of using hr /.  Links was used to format all the links similiarly and small was used to make all the text following the links smaller.  We did so because it seemed like the best solution other than editing the HTML with actual styling.
+
+#When you compared your site to the actual code base, which do you think had cleaner code that followed best practices and why?
+For this particular application I think we had cleaner code and probably followed better practices.  I think that the way the actual website was edited may have been easier because it was all done in the HTML file with no CSS, but using a stylesheet is probably better practice.  By removing much of the styling and referencing our stylesheet we definitely cleaned up our code, but it made solving some issues a bit more difficult.  Rather than editing the HTML file itself with styling we were forced to reference the style sheet classes.
+
+
+/*
