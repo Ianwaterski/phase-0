@@ -1,0 +1,21 @@
+body {
+ color: #000080 ;
+}
+
+a:link {
+ color: #800080 ;
+}
+
+a:visited {
+ color: #ff0000 ;
+}
+
+html {
+ background-color: #ffffff ;
+}
+
+.links {
+  float: right;
+  width: 50%;
+}
+
