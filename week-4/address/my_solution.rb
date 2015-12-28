@@ -5,11 +5,9 @@
 
 
 # Your Solution Below
+
 def make_address(street, city, state, zip)
-  puts street
-  puts city
-  puts state
-  puts zip.to_s
+  "You live at " + street + ", in the beautiful city of " + city + ", " + state + ". Your zip is " + zip + "."
 end
 
-print make_address(Folsom St., San Francisco, CA, 94107)
+puts make_address("633 Folsom St.","San Francisco","CA","94107")
