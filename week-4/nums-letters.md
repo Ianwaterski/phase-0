@@ -13,3 +13,4 @@ puts ((60*24)*365)*10 ' minutes in a decade'
 ```
 
 https://github.com/Ianwaterski/phase-0/blob/master/week-4/defining-variables.rb
+https://github.com/Ianwaterski/phase-0/blob/master/week-4/simple-string.rb
