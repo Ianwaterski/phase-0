@@ -11,6 +11,14 @@
 # If +list_of_nums+ is empty the method should return nil
 
 # Your Solution Below
+
 def smallest_integer(list_of_nums)
-  # Your code goes here!
+  list_of_nums = [3,1,2]
+  list_of_nums.min
 end
+
+puts smallest_integer
+
+
+
+
