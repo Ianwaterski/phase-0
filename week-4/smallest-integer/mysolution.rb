@@ -12,12 +12,13 @@
 
 # Your Solution Below
 
+list_of_nums = [1,2,3]
+
 def smallest_integer(list_of_nums)
-  list_of_nums = [3,1,2]
-  list_of_nums.min
+  return list_of_nums.min
 end
 
-puts smallest_integer
+puts smallest_integer(list_of_nums)
 
 
 
