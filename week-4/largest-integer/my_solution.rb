@@ -11,6 +11,10 @@
 # If +list_of_nums+ is empty the method should return nil
 
 # Your Solution Below
+list_of_nums =[-10,0,10]
+
 def largest_integer(list_of_nums)
-  # Your code goes here!
+  return list_of_nums.max
 end
+
+puts largest_integer(list_of_nums)
