@@ -11,6 +11,10 @@
 # If +list_of_words+ is empty the method should return nil
 
 #Your Solution Below
+list_of_words = ["turtle", "cat", "horse"]
+
 def shortest_string(list_of_words)
-  # Your code goes here!
+  return list_of_words.min
 end
+
+puts shortest_string([list_of_words])
