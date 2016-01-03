@@ -26,7 +26,6 @@ def shortest_string(list_of_words)
   return shortest
 end
 
-def shortest_string(list_of_words)
 
-end
+
 
