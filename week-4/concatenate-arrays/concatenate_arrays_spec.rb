@@ -21,4 +21,4 @@ describe 'array_concat' do
     expect(array_concat(['cat', 1], [2])).to eq ['cat', 1, 2]
   end
 end
-Status API Training Shop Blog About Pricing
+
