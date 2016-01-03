@@ -11,10 +11,15 @@
 # If +list_of_words+ is empty the method should return nil
 
 #Your Solution Below
-list_of_words = []
+
+
+
+
+word_length = 0
 
 def shortest_string(list_of_words)
-  return list_of_words.min
-end
 
-puts shortest_string([list_of_words])
+list_of_words.each do |x|
+  word_length.to_i = list_of_words.length
+  end
+end
