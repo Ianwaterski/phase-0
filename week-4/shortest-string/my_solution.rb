@@ -11,7 +11,7 @@
 # If +list_of_words+ is empty the method should return nil
 
 #Your Solution Below
-list_of_words = ["turtle", "cat", "horse"]
+list_of_words = []
 
 def shortest_string(list_of_words)
   return list_of_words.min
