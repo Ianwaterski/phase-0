@@ -15,6 +15,7 @@
 
 
 
+
 def shortest_string(list_of_words)
     shortest = list_of_words[0]
     list_of_words.each do |x|
@@ -23,5 +24,9 @@ def shortest_string(list_of_words)
     end
   end
   return shortest
+end
+
+def shortest_string(list_of_words)
+
 end
 
