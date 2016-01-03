@@ -6,6 +6,6 @@
 # Your Solution Below
 
 def array_concat(array_1, array_2)
-
-end
+  array_1.each {|x| print x, " "} + array_2.each{|x| print x, " "}
+ end
 
