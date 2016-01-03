@@ -15,11 +15,13 @@
 
 
 
-word_length = 0
-
 def shortest_string(list_of_words)
-
-list_of_words.each do |x|
-  word_length.to_i = list_of_words.length
+    shortest = list_of_words[0]
+    list_of_words.each do |x|
+     if x.length < shortest.length
+      shortest = x
+    end
   end
+  return shortest
 end
+
