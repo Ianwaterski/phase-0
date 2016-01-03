@@ -13,13 +13,6 @@
 #Your Solution Below
 
 
-
-
-word_length = 0
-
 def shortest_string(list_of_words)
 
-list_of_words.each do |x|
-  word_length.to_i = list_of_words.length
-  end
 end
