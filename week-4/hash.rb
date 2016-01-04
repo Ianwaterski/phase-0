@@ -7,10 +7,10 @@
 
 # my_info is empty to start.  Edit this!
 my_info = {
-:first_name => Ian,
-:last_name => Wudarski,
-:hometown => Williamstown
-:age => 28
+:first_name => "Ian",
+:last_name => "Wudarski",
+:hometown => "Williamstown",
+:age => 28,
 }
 
 my_info.each_key {|info| puts info, " "}
