@@ -12,6 +12,7 @@
 
 # Your Solution Below
 
+
 def largest_integer(list_of_nums)
   if (list_of_nums == '')
     return nil
@@ -19,7 +20,7 @@ def largest_integer(list_of_nums)
     y = list_of_nums[0]
     list_of_nums.each do |x|
         if x > y
-            y = x
+          y = x
       end
     end
     return y

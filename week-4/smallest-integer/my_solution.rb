@@ -12,14 +12,19 @@
 
 # Your Solution Below
 
-list_of_nums = [1,2,3]
-
 def smallest_integer(list_of_nums)
-  return list_of_nums.min
+  if (list_of_nums == '')
+    return nil
+  else
+    y = list_of_nums[0]
+    list_of_nums.each do |x|
+        if x < y
+            y = x
+      end
+    end
+    return y
+  end
 end
-
-puts smallest_integer(list_of_nums)
-
 
 
 
