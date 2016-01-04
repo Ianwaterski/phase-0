@@ -7,9 +7,9 @@
 
 # my_info is empty to start.  Edit this!
 my_info = {
-:first_name => Ian,
-:last_name => Wudarski,
-:hometown => Williamstown
+:first_name => "Ian",
+:last_name => "Wudarski",
+:hometown => "Williamstown",
 :age => 28
 }
 
