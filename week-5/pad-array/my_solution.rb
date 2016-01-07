@@ -26,10 +26,6 @@ if min_size > array.length
  end
  array
 end
-# my_array = [1,2,3]
-# p pad!(my_array,  5, 'apples')
-# p my_array
-# end
 
 
 def pad(array, min_size, value=nil) #non-destructive
