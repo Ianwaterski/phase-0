@@ -1,6 +1,4 @@
-# Pad an Array
-
-# I worked on this challenge [by myself, with: ]
+# I worked on this challenge [with: Brian Bier ]
 
 # I spent [] hours on this challenge.
 
@@ -8,7 +6,6 @@
 # Complete each step below according to the challenge directions and
 # include it in this file. Also make sure everything that isn't code
 # is commented in the file.
-
 
 
 # 0. Pseudocode
@@ -20,16 +17,46 @@
 
 # 1. Initial Solution
 def pad!(array, min_size, value = nil) #destructive
-  # Your code here
+# Your code here
+
+ if array.length == min_size || min_size == 0
+   return array
+ end
+
+ if min_size > array.length
+   until array.length == min_size
+     array.push(value)
+   end
+  end
+  array
 end
 
+
+# end
+
+
+
 def pad(array, min_size, value = nil) #non-destructive
-  # Your code here
+ # Your code here
+
+ if array.length == min_size || min_size == 0
+    return array
+  end
+
+new_array = []
+
+array.each do |element|
+    new_array.push(element)
+  end
+
+  until new_array.length == min_size
+    new_array.push(value)
+  end
+  new_array
 end
 
 
 # 3. Refactored Solution
-
 
 
 # 4. Reflection
