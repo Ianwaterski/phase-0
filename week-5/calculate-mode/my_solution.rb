@@ -15,6 +15,7 @@
 # What is the input? An Array of numbers of strings.
 # What is the output? An array of the most frequent values.
 # What are the steps needed to solve the problem?
+
 =begin
 
 Iterate through the array and count the instance of each object.
@@ -27,8 +28,7 @@ Return said array.
 
 =end
 
-
-# 1. Initial Solution
+#1. Initial Solution
 
 def mode (array)
   newhash=Hash.new
