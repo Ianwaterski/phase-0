@@ -34,7 +34,7 @@ def pad(array, min_size, value=nil) #non-destructive
   new_array = array.clone
 
   if array.length == min_size || min_size == 0
-    return array
+    return new_array
   end
 
 # array.each do |element|
