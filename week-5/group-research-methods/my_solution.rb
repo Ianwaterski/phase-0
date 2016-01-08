@@ -5,72 +5,94 @@
 i_want_pets = ["I", "want", 3, "pets", "but", "only", "have", 2]
 my_family_pets_ages = {"Evi" => 6, "Ditto" => 3, "Hoobie" => 3, "George" => 12, "Bogart" => 4, "Poly" => 4, "Annabelle" => 0}
 
-# Person 1's solution
-def my_array_finding_method(source, thing_to_find)
-  source # This line is here to make sure all tests initially fail. Delete it when you begin coding.
-end
+# # Person 1's solution
+# def my_array_finding_method(source, thing_to_find)
+#   source # This line is here to make sure all tests initially fail. Delete it when you begin coding.
+# end
 
-def my_hash_finding_method(source, thing_to_find)
-  source # This line is here to make sure all tests initially fail. Delete it when you begin coding.
-end
+# def my_hash_finding_method(source, thing_to_find)
+#   source # This line is here to make sure all tests initially fail. Delete it when you begin coding.
+# end
 
-# Identify and describe the Ruby method(s) you implemented.
-#
-#
-#
+# # Identify and describe the Ruby method(s) you implemented.
+# #
+# #
+# #
 
-# Person 2
-def my_array_modification_method!(source, thing_to_modify)
-  source.dup # This line is here to make sure all tests initially fail. Delete it when you begin coding.
-end
+# # Person 2
+# def my_array_modification_method!(source, thing_to_modify)
+#   source.dup # This line is here to make sure all tests initially fail. Delete it when you begin coding.
+# end
 
-def my_hash_modification_method!(source, thing_to_modify)
-  source.dup # This line is here to make sure all tests initially fail. Delete it when you begin coding.
-end
+# def my_hash_modification_method!(source, thing_to_modify)
+#   source.dup # This line is here to make sure all tests initially fail. Delete it when you begin coding.
+# end
 
-# Identify and describe the Ruby method(s) you implemented.
-#
-#
-#
-
-
-# Person 3
-def my_array_sorting_method(source)
-  source # This line is here to make sure all tests initially fail. Delete it when you begin coding.
-end
-
-def my_hash_sorting_method(source)
-   source # This line is here to make sure all tests initially fail. Delete it when you begin coding.
-end
-
-# Identify and describe the Ruby method(s) you implemented.
-#
-#
-#
+# # Identify and describe the Ruby method(s) you implemented.
+# #
+# #
+# #
 
 
-# Person 4
-def my_array_deletion_method!(source, thing_to_delete)
-  source.dup # This line is here to make sure all tests initially fail. Delete it when you begin coding.
-end
+# # Person 3
+# def my_array_sorting_method(source)
+#   source # This line is here to make sure all tests initially fail. Delete it when you begin coding.
+# end
 
-def my_hash_deletion_method!(source, thing_to_delete)
-  source.dup # This line is here to make sure all tests initially fail. Delete it when you begin coding.
-end
+# def my_hash_sorting_method(source)
+#    source # This line is here to make sure all tests initially fail. Delete it when you begin coding.
+# end
 
-# Identify and describe the Ruby method(s) you implemented.
-#
-#
-#
+# # Identify and describe the Ruby method(s) you implemented.
+# #
+# #
+# #
+
+
+# # Person 4
+# def my_array_deletion_method!(source, thing_to_delete)
+#   source.dup # This line is here to make sure all tests initially fail. Delete it when you begin coding.
+# end
+
+# def my_hash_deletion_method!(source, thing_to_delete)
+#   source.dup # This line is here to make sure all tests initially fail. Delete it when you begin coding.
+# end
+
+# # Identify and describe the Ruby method(s) you implemented.
+# #
+# #
+# #
 
 
 # Person 5
 def my_array_splitting_method(source)
-  source # This line is here to make sure all tests initially fail. Delete it when you begin coding.
+  integer_array = []
+  string_array = []
+
+  source.each do |item|
+    if item.respond_to?(:integer?)
+      integer_array.push(item)
+    else
+      string_array.push(item)
+    end
+  end
+  [integer_array, string_array]
 end
 
+
+
 def my_hash_splitting_method(source, age)
-  source # This line is here to make sure all tests initially fail. Delete it when you begin coding.
+  lessthan4_array = []
+  otherpets_array = []
+
+  source.each do |item|
+    if item.find_all {|item| item.to_i < 4}
+      lessthan4_array.push(item)
+    else
+      otherpets_array.push(item)
+    end
+  end
+  [lessthan4_array, otherpets_array]
 end
 
 # Identify and describe the Ruby method(s) you implemented.
