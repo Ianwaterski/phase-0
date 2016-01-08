@@ -30,19 +30,17 @@ end
 
 def pad(array, min_size, value=nil) #non-destructive
 # Your code here
-  # clone method ruby
 
   if array.length == min_size || min_size == 0
     return array
   end
 
-  new_array = []
+new_array = []
 
 array.each do |element|
     new_array.push(element)
   end
 
-  #if item from original array not present add to new
 
   until new_array.length == min_size
     new_array.push(value)
