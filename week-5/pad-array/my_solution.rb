@@ -31,15 +31,15 @@ end
 def pad(array, min_size, value=nil) #non-destructive
 # Your code here
 
+  new_array = array.clone
+
   if array.length == min_size || min_size == 0
     return array
   end
 
-new_array = []
-
-array.each do |element|
-    new_array.push(element)
-  end
+# array.each do |element|
+#     new_array.push(element)
+#   end
 
 
   until new_array.length == min_size
