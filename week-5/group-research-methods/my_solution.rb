@@ -265,21 +265,15 @@ def my_hash_splitting_method(source, age)
 end
 
 # Identify and describe the Ruby method(s) you implemented.
-#
-#
-#
+# In the first method I used the same method as Heather, .respond_to?.  This method will return true if the parameter in parantheses is met, and false if it does not.  It was very useful in identifying which index
 
-
-# Release 1: Identify and describe the Ruby method you implemented. Teach your
-# accountability group how to use the methods.
-#
-#
+# In the second splitting method I used .find_all which when called will iterate through an array and find all values that correspond to the condition.  In this case all item's with a value less than 4.
 #
 
 
 # Release 3: Reflect!
 # What did you learn about researching and explaining your research to others?
 #
-#
+# Everytime I open the Ruby docs I'm blown away by how much there is to learn.  It's always great to see other people's take on what they learned and how they came to their solution.  The method's I learned definitely seemed very useful in application, especially .respond_to? which seems like it could make a great check for a lot of things.
 #
 #
