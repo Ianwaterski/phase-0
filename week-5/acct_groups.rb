@@ -2,10 +2,13 @@ cohort = ['Dong Wook Seo','Aaron Hu','Adam Pinsky','Akeem Street','Alex Forger',
 
 def acctgroups(cohort)
   x = 0
+
+
+if cohort.size % 4 == 0
   groupnumber = cohort.each_slice(4).to_a
 
   while x < 14
-    puts "Accountability Group #{x} members are #{groupnumber[x]}."
+    puts "Accountability Group #{x+1} members are #{groupnumber[x+1]}."
     x += 1
   end
 
