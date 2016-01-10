@@ -16,13 +16,6 @@ if cohort.size % 3 == 0
     groupnumber = cohort.shuffle!.each_slice(3).to_a
 end
 
-if cohort.size % 5 == 0
-  groupnumber = cohort.shuffle!.each_slice(5).to_a
-end
-
-if cohort.size % 3 == 0
-    groupnumber = cohort.shuffle!.each_slice(3).to_a
-end
 
 #run output of who is in what group
   while x < 14
