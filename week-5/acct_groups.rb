@@ -5,7 +5,16 @@ def acctgroups(cohort)
 
 # check to see if groups divide evenly
 if cohort.size % 4 == 0
-  groupnumber = cohort.each_slice(4).to_a
+  groupnumber = cohort.shuffle!.each_slice(4).to_a
+end
+
+if cohort.size % 5 == 0
+  groupnumber = cohort.shuffle!.each_slice(5).to_a
+end
+
+if cohort.size % 3 == 0
+    groupnumber = cohort.shuffle!.each_slice(3).to_a
+end
 
 if cohort.size % 5 == 0
   groupnumber = cohort.shuffle!.each_slice(5).to_a
