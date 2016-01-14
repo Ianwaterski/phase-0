@@ -99,4 +99,4 @@ end
 # The use of flow control in this challenge was very to the point.  Is the guess higher than the answer, yes then return :high.  Is it lower than the answer, yes then return :low.  If neither of those then return :correct.  The logic that was needed to set up this comparison was very simple in my opinion.
 
 # Why do you think this code requires you to return symbols? What are the benefits of using symbols?
-# I think this code requires us to return symbols because symbols have both integer and string representations.  This could be very useful in a method that is comparing one value but also wants to return a value that may be different.
+# I think this code requires us to return symbols because symbols have both integer and string representations.  There is also no need to define a symbol since Ruby does that for you, but also that no matter where the symbol appears in the program it will have the same value.
