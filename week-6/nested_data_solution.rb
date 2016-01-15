@@ -64,11 +64,22 @@ number_array = [5, [10, 15], [20,25,30], 35]
 
 startup_names = ["bit", ["find", "fast", ["optimize", "scope"]]]
 
-
+new_array = []
+startup_names.flatten!
+startup_names.each do |item|
+  item << 'ly'
+  new_array.push(item)
+end
+p new_array
 
 
 
 
 # What are some general rules you can apply to nested arrays?
+# Take your time and try to visually work your way through each data structure.  When you are unsure where you end up in your nest, use puts to see where you end up.
+
 # What are some ways you can iterate over nested arrays?
+# We ended up using .each almost exclusively.  We also used an if statement to conditionally continue the iteration if the data structure met a certain class.
+
 # Did you find any good new methods to implement or did you re-use one you were already familiar with? What was it and why did you decide that was a good option?
+# We ended up using .flatten! in the bonus challenge to eliminate any need for iteration.  Not sure that was what was intended but it worked at the expense of the original data structure.  I think if we had chained .flatten with .clone we could have preserved the original structure but it made no mention of it needing to be non-destructive so we left it.
