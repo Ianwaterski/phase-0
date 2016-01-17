@@ -109,7 +109,10 @@ end
 
 # Reflection
 # What was the most difficult part of this challenge for you and your pair?
+# We did a lot of iterating in order to switch the credit card input between string and integer in order to use certain methods on it.  Keeping track of where we were and how we were doing that was a bit difficult.  We used some really good driver good along the way that helped us isolate where our issues were and what our method was printing out at the time.
 
 # What new methods did you find to help you when you refactored?
+# I don't think we used any methods that I hadn't used so far.  Had some more chances to use methods like flatten and map which were a huge help.
 
 # What concepts or learnings were you able to solidify in this challenge?
+# Which methods were usable on which data types.  We were getting the occasional error when trying to call certain methods on our array of numbers depending on what state it was in.
