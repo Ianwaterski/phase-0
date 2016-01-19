@@ -222,4 +222,17 @@ all_states.virus_effects_all
 #=======================================================================
 
 # Reflection Section
+# What are the differences between the two different hash syntaxes shown in the state_data file?
+# Different notations in order to acheive the same goal.  One uses quotes and the other uses a colon.
 
+# What does require_relative do? How is it different from require?
+# Require relative requires a file path that is relative to where it is on your local machine.  Require pulls from the ruby library while require_relative pulls from wherever you tell it to.
+
+# What are some ways to iterate through a hash?
+# .each, .each_key, .each_value.  All have specific applications depending on which values you are trying to access.
+
+# When refactoring virus_effects, what stood out to you about the variables, if anything?
+#What stood out is that it required arguments of the local variables despite each method already containing those parameters.  It was redundant.  In our refactor we removed the local variables from virus_effects.
+
+# What concept did you most solidify in this challenge?
+# I think what really stood out for in this challenge was iterating through the hash to get the values we were looking for.  How the class worked seemed pretty straight forward but accessing each value within the hash was something I wasn't completely sure about.
