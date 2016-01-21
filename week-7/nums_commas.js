@@ -8,14 +8,25 @@
 
 
 // Initial Solution
-function reverse(s) {
-  var o = '';
-  for (var i = s.length - 1; i >= 0; i--)
-    o = o + s[i];
-  return o;
+var separateComma = function(x) {
+  var array = [];
+  var string = x.toString();
+  var array = string.split('').reverse();
+
+
+  for (var counter = 0; counter <= array.length; counter++){
+    if (counter % 3 === 0){
+      array.splice(counter, 0, ",");
+    }
+    return array.reverse().join('');
+
+  }
 }
 
-console.log(reverse(1000));
+
+
+
+console.log(separateComma(23456));
 
 
 
