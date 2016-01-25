@@ -133,9 +133,11 @@ if (dealerHand > yourHand && dealerHand <= 21){
 
 //Reflection
 // What was the most difficult part of this challenge?
-
+// Getting started to be honest.  I templated and pseudocoded a bunch of ideas before I settled on blackjack.  Honestly I wish I would have developed other ideas a bit more because blackjack was not as easy as I imagined it to be.
 // What did you learn about creating objects and functions that interact with one another?
+// It's not as complicated as I thought and it really saves you work down the road.  If you can condense code that you will reuse into a function it saves you work further down the line.
 
 // Did you learn about any new built-in methods you could use in your refactored solution? If so, what were they and how do they work?
-
+// My MVP is very bare bones and needs to be refactored in the worst way.  My problem is that I spent the majority of the day trouble shooting a case and staring at the same block of code for too long.  At this point it is likely outside my ability to come up with a good refactor.  I'm going to look at it again tomorrow and see if I an come up with anything before submission.
 // How can you access and manipulate properties of objects?
+// There's a few ways that you can do this, personally I felt most comfortable using dot notation.  Bracket notation is also an option but it never really fell into regular usage with me.  Throughout the 7.4 challenge I developed a pretty firm undestanding of how to manipulate objects with dot notation.
