@@ -1,3 +1,13 @@
+// Goal is to have a working MVP for a blackjack simulation.
+// I want to draw 4 random cards, then compare their results to each other.
+// Psuedocode:
+//Input: what the user wants to do with their cards when shown
+// hit/stay/fold
+
+// Output: Dealers hand and whether or not user had won
+
+
+
 //Deal a random card
 var deal = function() {
   var card = Math.floor(Math.random()*52+1);
