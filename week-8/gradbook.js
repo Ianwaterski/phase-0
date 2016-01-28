@@ -1,8 +1,8 @@
 /*
 Gradebook from Names and Scores
 
-I worked on this challenge [by myself, with:]
-This challenge took me [#] hours.
+I worked on this challenge [with: Lydia Nash]
+This challenge took me [1] hours.
 
 You will work with the following two variables.  The first, students, holds the names of four students.
 The second, scores, holds groups of test scores.  The relative positions of elements within the two
@@ -28,16 +28,82 @@ var scores = [ [80, 70, 70, 100],
 // Write your code below.
 
 
+// var  Gradebook = {}
 
 
 
+// Gradebook["Joseph"] = {};
+// Gradebook["Susan"] = {};
+// Gradebook["William"] = {};
+// Gradebook["Elizabeth"] = {};
 
+// Gradebook["Joseph"] = scores[0];
+// Gradebook["Susan"] = scores[1];
+// Gradebook["William"] = scores[2];
+// Gradebook["Elizabeth"] = scores[3];
+
+// Gradebook["addScore"] = addScore;
+
+// var addScore =  function(name, score){
+//   Gradebook[name].push(score);
+// }
+
+// var getAverage = function(name){
+//   return average(Gradebook[name]);
+// }
+
+// var average = function(array){
+//   var total = 0;
+
+//   for (var i = 0; i < array.length; i++){
+//     total += array[i];
+//   }
+//   var average = total/array.length;
+//   return average;
+// }
+
+
+// console.log(Gradebook);
+// addScore('Joseph', 85);
+// console.log(Gradebook);
+// console.log(getAverage("Joseph"));
 
 
 // __________________________________________
 // Refactored Solution
 
+var  gradebook = {};
 
+for (var i in students){
+  gradebook[students[i]] = {};
+}
+
+for (var i in students){
+  gradebook[students[i]]["testScores"] = scores[i];
+}
+
+gradebook["addScore"] = function(name, score){
+  gradebook[name]["testScores"].push(score);
+}
+
+gradebook["getAverage"] = function(name){
+  return average(gradebook[name]["testScores"]);
+}
+
+var average = function(array){
+  var total = 0;
+
+  for (var i in array){
+    total += array[i];
+  }
+  var average = total/array.length;
+  return average;
+}
+
+// Driver Code
+// addScore('Joseph', 85);
+// console.log(gradebook);
+// console.log(getAverage("Joseph"));
 
 
 
@@ -47,11 +113,14 @@ var scores = [ [80, 70, 70, 100],
 // __________________________________________
 // Reflect
 
+// What did you learn about adding functions to objects?
+// I learned that you can just add a function to an object in a similar way that you would add a property.  Instead of defining in an object
 
+// How did you iterate over nested arrays in JavaScript?
+// We just used for loops to add all of our properties to the index values in their new object.
 
-
-
-
+// Were there any new methods you were able to incorporate? If so, what were they and how did they work?
+// I don't think we used any new methods for our refactor but we used for/in loops to clean up our code for refactor.
 
 
 
