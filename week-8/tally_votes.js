@@ -1,7 +1,7 @@
 // Tally Votes in JavaScript Pairing Challenge.
 
-// I worked on this challenge with:
-// This challenge took me [#] hours.
+// I worked on this challenge with: Coline Forde
+// This challenge took me [1hr 20m] hours.
 
 // These are the votes cast by each student. Do not alter these objects here.
 var votes = {
@@ -64,33 +64,76 @@ var officers = {
   treasurer: undefined
 }
 
-// Pseudocode
+// // Pseudocode
+// // Iterate through the votes object, and tally votes for each person. Compare the total votes to rest of votes to determine which position each person will win, then push winners to officers object.
+
+// // __________________________________________
+// // Initial Solution
+
+// for (var student in votes) {
+//   for (var position in votes[student]) {
+//    voteCount[position][votes[student][position]] = voteCount[position][votes[student][position]] || 0
+//    voteCount[position][votes[student][position]] +=1
+//   }
+// };
 
 
-// __________________________________________
-// Initial Solution
+// var maxCount = {}
+// for (var position in voteCount) {
+//   for (var candidate in voteCount[position]) {
+//     maxCount[position] = maxCount[position] || voteCount[position][candidate]
+//     officers[position] = officers[position] || candidate
+//     if (maxCount[position] < voteCount[position][candidate]) {
+//         maxCount[position] = voteCount[position][candidate];
+//         officers[position] = candidate;
+//         }
+//     }
+// };
 
-
-
-
-
+// console.log(officers)
+// console.log(voteCount);
 
 
 // __________________________________________
 // Refactored Solution
 
 
+for (var student in votes) {
+  for (var position in votes[student]) {
+    var studentVotes = [votes[student][position]]
+   voteCount[position][studentVotes] = voteCount[position][studentVotes] || 0
+   voteCount[position][studentVotes] +=1
+  }
+};
 
 
+var maxCount = {}
+for (var position in voteCount) {
+  for (var candidate in voteCount[position]) {
+    var voteCounts = voteCount[position][candidate]
+    maxCount[position] = maxCount[position] || voteCounts
+    officers[position] = officers[position] || candidate
+    if (maxCount[position] < voteCounts) {
+        maxCount[position] = voteCounts;
+        officers[position] = candidate;
+        }
+    }
+};
+
+console.log(officers)
 
 
 // __________________________________________
 // Reflection
 
+// What did you learn about iterating over nested objects in JavaScript?
+// Iterating over nested objects isn't all that difficult, but getting the right values is the hard part.
 
+// Were you able to find useful methods to help you with this?
+// Not really we kept it really simple and iterated through each object without any methods.  We were trying to find a way to work .max into our iteration but weren't sure it would save us any time.
 
-
-
+// What concepts were solidified in the process of working through this challenge?
+// Accessing values within nested objects.  My pair was really good at it and it helped to have someone explain what was going on while we were working our way down through the object values.
 
 // __________________________________________
 // Test Code:  Do not alter code below this line.
