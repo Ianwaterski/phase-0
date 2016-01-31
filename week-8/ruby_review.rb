@@ -9,7 +9,7 @@
 # Test whether each index is divisible by 5
 # => #If it is replace with buzz
 # Finally test whether each index is divisible by 15
-# => if it is replace with fizzbuzz
+# => if it is, replace with fizzbuzz
 
 
 # Initial Solution
