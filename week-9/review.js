@@ -1,3 +1,5 @@
+//Initial Solution
+
 var groceryList = [];
 
   function addItem(item, quantity){
@@ -42,3 +44,35 @@ var groceryList = [];
 
 // changeQuantity('beer', 12)
 // showList();
+
+
+//Refactor (object instead of array)
+
+function groceryList() {
+    this.list = {};
+
+    this.add = function(item, quantity){
+      // this.list ['item']['quantity']
+      this.list[item] = quantity;
+    };
+    this.display = function(){
+      for (var item in this.list){
+        console.log("Item: " + item + " Quantity: " + this.list[item]);
+      }
+    };
+
+    this.update = function(item, quantity){
+      this.list[item] = quantity;
+    };
+
+    this.remove = function(item){
+      delete this.list[item];
+    }
+ }
+
+var myList = new groceryList();
+myList.add('beer', 6);
+myList.add('milk', 2);
+myList.add('eggs', 12);
+myList.display()
+myList.remove('eggs');
