@@ -51,25 +51,31 @@ var groceryList = [];
 function groceryList() {
     this.list = {};
 
+    //add function
     this.add = function(item, quantity){
       // this.list ['item']['quantity']
       this.list[item] = quantity;
     };
+
+    //display
     this.display = function(){
       for (var item in this.list){
         console.log("Item: " + item + " Quantity: " + this.list[item]);
       }
     };
 
+    //update
     this.update = function(item, quantity){
       this.list[item] = quantity;
     };
 
+    //remove
     this.remove = function(item){
       delete this.list[item];
     }
  }
 
+//driver
 var myList = new groceryList();
 myList.add('beer', 6);
 myList.add('milk', 2);
