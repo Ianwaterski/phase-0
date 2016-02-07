@@ -151,3 +151,15 @@ p students[0].letter_grade == 'B'
 
 p linear_search(students, "Alex") == 0
 p linear_search(students, "NOT A STUDENT") == -1
+
+
+
+# Reflection
+# What concepts did you review in this challenge?
+# I spent time reviewing some iteration.  We also used some past challenges to review our sum/average function as well.  As a whole I think we spent more time reviewing objects and instances in order to get our test code to pass.
+
+# What is still confusing to you about Ruby?
+# Ruby is becoming clearer everytime I use it, without the break for JS I think I would be pretty confident in my abilities.  I think my problem solving is pretty solid but what needs time is going to be the repetition of syntax and built in methods.
+
+# What are you going to study to get more prepared for Phase 1?
+# Currently I'm still just drilling myself with ruby challenges and review.  I want to be as comfortable as possible before Phase 1 kicks in to gear.  Like I said I feel pretty confident in my ability to solve the logic, but implementing the correct methods and syntax is what is taking me more time.
